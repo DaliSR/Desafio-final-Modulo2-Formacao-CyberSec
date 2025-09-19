@@ -1,0 +1,108 @@
+* Host localhost:8080 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8080...
+* Connected to localhost (::1) port 8080
+* using HTTP/1.x
+> GET /login.php HTTP/1.1
+> Host: dvwa
+> User-Agent: curl/8.11.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< Server: nginx
+< Date: Tue, 16 Sep 2025 23:03:35 GMT
+< Content-Type: text/html;charset=utf-8
+< Content-Length: 1523
+< Connection: keep-alive
+< Set-Cookie: PHPSESSID=47cjamqrapqrd11kqusis5vjk2; path=/
+< Expires: Tue, 23 Jun 2009 12:00:00 GMT
+< Cache-Control: no-cache, must-revalidate
+< Pragma: no-cache
+< Set-Cookie: PHPSESSID=47cjamqrapqrd11kqusis5vjk2; path=/
+< Set-Cookie: security=low
+< Vary: Accept-Encoding
+< Access-Control-Allow-Headers: *
+< 
+{ [1523 bytes data]
+100  1523  100  1523    0     0  85865      0 --:--:-- --:--:-- --:--:-- 89588
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<title>Login :: Damn Vulnerable Web Application (DVWA) v1.10 *Development*</title>
+
+		<link rel="stylesheet" type="text/css" href="dvwa/css/login.css" />
+
+	</head>
+
+	<body>
+
+	<div id="wrapper">
+
+	<div id="header">
+
+	<br />
+
+	<p><img src="dvwa/images/login_logo.png" /></p>
+
+	<br />
+
+	</div> <!--<div id="header">-->
+
+	<div id="content">
+
+	<form action="login.php" method="post">
+
+	<fieldset>
+
+			<label for="user">Username</label> <input type="text" class="loginInput" size="20" name="username"><br />
+
+
+			<label for="pass">Password</label> <input type="password" class="loginInput" AUTOCOMPLETE="off" size="20" name="password"><br />
+
+			<br />
+
+			<p class="submit"><input type="submit" value="Login" name="Login"></p>
+
+	</fieldset>
+
+	<input type='hidden' name='user_token' value='b15774f30b3be15ab052ee9b2a0af5b3' />
+
+	</form>
+
+	<br />
+
+	
+
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<!-- <img src="dvwa/images/RandomStorm.png" /> -->
+	</div > <!--<div id="content">-->
+
+	<div id="footer">
+
+	<p><a href="http://www.dvwa.co.uk/" target="_blank">Damn Vulnerable Web Application (DVWA)</a></p>
+
+	</div> <!--<div id="footer"> -->
+
+	</div> <!--<div id="wrapper"> -->
+
+	</body>
+
+</html>
+* Connection #0 to host localhost left intact
